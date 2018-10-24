@@ -3,7 +3,11 @@ $primary-color: #444;
 $secondary-color: #fb763c;
 $show-home-image: true;
 $home-image: url(../img/apple-computer-desk-326503.jpg);
-$backgroung-opacity: 0.5;
+$portrait: url(../img/Portrait.jpg);
+$logo: url(../img/Asset_6.svg);
+$backgroung-opacity: 0.6;
+$text-shadow: 2px 2px 3px #333;
+$text-shadow-light: 1px 1px 1px rgb(83, 83, 83);
 
 // Functions
 @mixin easeOut {
