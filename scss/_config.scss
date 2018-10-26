@@ -1,4 +1,5 @@
 // Variables
+
 $primary-color: #444;
 $secondary-color: #fb763c;
 $show-home-image: true;
@@ -10,6 +11,7 @@ $text-shadow: 2px 2px 3px #333;
 $text-shadow-light: 1px 1px 1px rgb(83, 83, 83);
 
 // Functions
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -33,5 +35,28 @@ $text-shadow-light: 1px 1px 1px rgb(83, 83, 83);
         z-index: -1;
       }
     }
+  }
+}
+
+// Media query Mixins
+
+@mixin mediaSmall {
+  @media screen and (max-width: 568px) {
+    @content;
+  }
+}
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLarge {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaWide {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
