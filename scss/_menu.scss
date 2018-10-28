@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: setTextColor($primary-color);
     @include easeOut;
   }
 
@@ -43,9 +43,10 @@
 
 .menu {
   position: fixed;
+  right: 0;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+
   visibility: hidden;
 
   &.show {
@@ -66,9 +67,11 @@
 
   // Menu side sliding from top
   &-nav {
+    // opacity: 0.9;
     margin: 0;
     padding: 0;
-    background: darken($secondary-color, 5);
+    background: rgba($secondary-color-darken, 0.9);
+    // background: darken($secondary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -80,7 +83,7 @@
 
   // Branding side sliding from bottom
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color, 0.9);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -88,13 +91,15 @@
       transform: translate3d(0, 0, 0);
     }
 
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: $portrait;
-      background-size: cover;
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
+    .logo {
+      margin-top: 6vh;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      background: $logo;
+      background-size: 100%;
+      // border-radius: 50%;
+      // border: solid 3px $secondary-color;
     }
   }
 
@@ -115,11 +120,10 @@
     display: inline-block;
     position: relative;
     font-size: 1.6rem;
+    font-weight: 500;
     text-transform: uppercase;
-
     margin: 1rem 0;
-    font-weight: 300;
-    color: #fff;
+    color: setTextColor($primary-color);
     text-decoration: none;
     // @include easeOut;
 

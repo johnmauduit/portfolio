@@ -41,7 +41,7 @@
     transform: translate3d(100%, 0, 0);
     font-size: 1.5rem;
 
-    .portrait {
+    .logo {
       width: 150px;
       height: 150px;
     }
@@ -59,6 +59,47 @@
       }
     }
   }
+  main {
+    .about-info {
+      grid-template-areas:
+        "title"
+        "bio-image"
+        "bio"
+        "job1"
+        "job2"
+        "job3"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+    &#about {
+      .title h1 {
+        font-size: 4rem;
+      }
+      .portrait {
+        width: 200px;
+        height: 200px;
+      }
+      .bio h3 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      .bio p {
+        font-size: 1.6rem;
+        text-align: justify;
+      }
+      .job p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+
+    &#contact {
+      .title h1 {
+        margin-top: 10vh;
+        font-size: 4rem;
+      }
+    }
+  }
 }
 
 // Smartphone
@@ -67,6 +108,148 @@
     &#home h1 {
       font-size: 4rem;
       margin-top: 10vh;
+    }
+    &#about {
+      .title h1 {
+        font-size: 3rem;
+      }
+
+      .portrait {
+        width: 150px;
+        height: 150px;
+      }
+      .bio h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .bio p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+      .job p {
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+    }
+    &#contact {
+      .title {
+        text-align: center;
+        padding-bottom: 2rem;
+        h1 {
+          margin-top: 6vh;
+          font-size: 2.2rem;
+          padding-bottom: 1.5rem;
+        }
+      }
+      .boxes {
+        .boxe {
+          display: flex;
+          padding-bottom: 0.5rem;
+        }
+        .icons {
+          width: 45px;
+          text-align: left;
+          &.mail {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+          }
+          &.phone {
+            font-size: 1.7rem;
+            margin-top: 0.2rem;
+          }
+          &.linkedin {
+            font-size: 1.7rem;
+            margin-top: 0.2rem;
+          }
+          &.file {
+            font-size: 2.1rem;
+            margin-top: 0;
+          }
+        }
+
+        .contact-text {
+          display: flex;
+          text-align: right;
+          margin-top: 0.9rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Iphone 5/SE
+@include mediaXsmall {
+  main {
+    &#home h1 {
+      font-size: 4rem;
+      margin-top: 10vh;
+    }
+    &#about {
+      .title h1 {
+        font-size: 3rem;
+      }
+
+      .portrait {
+        width: 150px;
+        height: 150px;
+      }
+      .bio h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .bio p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+      .job p {
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+    }
+    &#contact {
+      .title {
+        text-align: center;
+        padding-bottom: 1.5rem;
+        h1 {
+          margin-top: 4vh;
+          font-size: 1.8rem;
+          padding-bottom: 1.1rem;
+        }
+      }
+      .boxes {
+        .boxe {
+          display: flex;
+          padding-bottom: 0.1rem;
+        }
+        .icons {
+          width: 40px;
+          text-align: left;
+          &.mail {
+            font-size: 1.5rem;
+            margin-top: 0.4rem;
+          }
+          &.phone {
+            font-size: 1.7rem;
+            margin-top: 0.2rem;
+          }
+          &.linkedin {
+            font-size: 1.7rem;
+            margin-top: 0.2rem;
+          }
+          &.file {
+            font-size: 2.1rem;
+            margin-top: 0;
+          }
+        }
+
+        .contact-text {
+          display: flex;
+          text-align: right;
+          margin-top: 1rem;
+          font-size: 0.7rem;
+        }
+      }
     }
   }
 }
