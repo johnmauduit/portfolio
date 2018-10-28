@@ -2,15 +2,33 @@
 
 $primary-color: #444;
 $secondary-color: #fb763c;
+$secondary-color-darken: darken(#fb763c, 5);
 $show-home-image: true;
 $home-image: url(../img/apple-computer-desk-326503.jpg);
+$about-image: url(../img/apple-black-and-white-black-and-white-169573.jpg);
+$work-image: url(../img/business-computer-connection-450035.jpg);
+$contact-image: url(../img/business-computer-connection-450035.jpg);
 $portrait: url(../img/Portrait.jpg);
-$logo: url(../img/Asset_6.svg);
-$backgroung-opacity: 0.6;
+$logo: url(../img/Asset_6.svg) no-repeat;
+$background-opacity: 0.6;
+$background-blur: blur(5px);
 $text-shadow: 2px 2px 3px #333;
 $text-shadow-light: 1px 1px 1px rgb(83, 83, 83);
 
+// List
+
+$photos: home about work contact;
+
 // Functions
+@function setTextColor($color) {
+  @if (lightness($color) > 40) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Mixins Its like a function
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -18,30 +36,37 @@ $text-shadow-light: 1px 1px 1px rgb(83, 83, 83);
 
 @mixin background {
   @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-      //&:after is a sudo element wich replace a div overlay here
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($primary-color, $backgroung-opacity);
-        z-index: -1;
+    @each $img in $photos {
+      &#bg-img-#{$img} {
+        background: url(../img/#{$img}.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
       }
+    }
+    //&:after is a sudo element wich replace a div overlay here
+    &:after {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($primary-color, $background-opacity);
+      z-index: -1;
     }
   }
 }
 
 // Media query Mixins
 
+@mixin mediaXsmall {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
 @mixin mediaSmall {
-  @media screen and (max-width: 568px) {
+  @media screen and (min-width: 321px) and (max-width: 568px) {
     @content;
   }
 }
