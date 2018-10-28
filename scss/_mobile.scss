@@ -182,12 +182,12 @@
 @include mediaXsmall {
   main {
     &#home h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       margin-top: 10vh;
     }
     &#about {
       .title h1 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
 
       .portrait {
@@ -195,7 +195,7 @@
         height: 150px;
       }
       .bio h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
       .bio p {
