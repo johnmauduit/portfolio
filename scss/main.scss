@@ -33,6 +33,14 @@ h3 {
   }
 }
 
+h4,
+h5 {
+  margin: 0;
+  padding-top: 0.4rem;
+  font-weight: 200;
+  text-shadow: $text-shadow;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -48,6 +56,7 @@ header {
   color: $secondary-color;
 }
 
+// Main
 main {
   padding: 4rem;
   min-height: calc(100vh - 80px);
@@ -180,6 +189,7 @@ main {
   }
 }
 
+// Footer
 .footer {
   grid-area: footer;
   height: 80px;
@@ -205,5 +215,5 @@ main {
   }
 }
 
-// Media query after the main css
+// Media query @import after the main compiled css
 @import "mobile";
