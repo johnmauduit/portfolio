@@ -143,6 +143,13 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem; }
 
+h4,
+h5 {
+  margin: 0;
+  padding-top: 0.4rem;
+  font-weight: 200;
+  text-shadow: 2px 2px 3px #333; }
+
 a {
   color: #fff;
   text-decoration: none; }
