@@ -1,0 +1,36 @@
+{
+  "home": "accueil",
+  "about": "à propos de moi",
+  "work": "mon travail",
+  "contact": "me contacter",
+
+  "firstname": "John ",
+  "lastname": "Mauduit",
+  "position": "Développeur Web",
+
+  "title-about-1": "A propos de ",
+  "title-about-2": "moi",
+  "name": "John Mauduit",
+  "bio": "lorem10",
+  "job-1": "moi",
+  "date-1": "moi",
+  "position-1": "moi",
+  "text-1": "moi",
+  "job-2": "moi",
+  "date-2": "moi",
+  "position-2": "moi",
+  "text-2": "moi",
+  "job-3": "moi",
+  "date-3": "moi",
+  "position-3": "moi",
+  "text-3": "moi",
+
+  "title-work-1": "A",
+  "title-work-2": "venir",
+  "title-work-3": "Pour le moment, faites un petit tour sur mon Github",
+
+  "title-contact-1": "Me",
+  "title-contact-2": "contacter",
+  "title-contact-3": "Voici comment vous pouvez me joindre",
+  "resume": "Téléchargez mon CV"
+}

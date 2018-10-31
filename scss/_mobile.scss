@@ -71,7 +71,7 @@
         "footer";
       grid-template-columns: 1fr;
     }
-    &#about {
+    &.about {
       .title h1 {
         font-size: 4rem;
       }
@@ -93,7 +93,7 @@
       }
     }
 
-    &#contact {
+    &.contact {
       .title h1 {
         margin-top: 10vh;
         font-size: 4rem;
@@ -105,11 +105,11 @@
 // Smartphone
 @include mediaSmall {
   main {
-    &#home h1 {
+    &.home h1 {
       font-size: 4rem;
       margin-top: 10vh;
     }
-    &#about {
+    &.about {
       .title h1 {
         font-size: 3rem;
       }
@@ -131,7 +131,7 @@
         text-align: justify;
       }
     }
-    &#contact {
+    &.contact {
       .title {
         text-align: center;
         padding-bottom: 2rem;
@@ -181,11 +181,11 @@
 // Iphone 5/SE
 @include mediaXsmall {
   main {
-    &#home h1 {
+    &.home h1 {
       font-size: 3rem;
       margin-top: 10vh;
     }
-    &#about {
+    &.about {
       .title h1 {
         font-size: 2rem;
       }
@@ -207,7 +207,7 @@
         text-align: justify;
       }
     }
-    &#contact {
+    &.contact {
       .title {
         text-align: center;
         padding-bottom: 1.5rem;
