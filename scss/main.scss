@@ -5,6 +5,35 @@
   box-sizing: border-box;
 }
 
+// Country flags
+.flags {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  .lang {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    &.fr {
+      background: $flag-fr no-repeat;
+      padding: 0 1.5rem;
+      //margin-right: 1rem;
+    }
+    &.en {
+      background: $flag-uk no-repeat;
+      padding: 0 1.5rem;
+    }
+    &:hover {
+      width: 32px;
+      height: 32px;
+      opacity: 0.9;
+    }
+  }
+}
+
 body {
   @include background();
   background: $primary-color;
@@ -75,7 +104,7 @@ main {
       }
     }
   }
-  &#home {
+  &.home {
     overflow: hidden;
 
     h1 {
@@ -83,7 +112,7 @@ main {
     }
   }
 
-  &#about {
+  &.about {
     .portrait {
       width: 250px;
       height: 250px;
@@ -140,7 +169,7 @@ main {
     text-align: center;
   }
 
-  &#work {
+  &.work {
     overflow: hidden;
 
     h1 {
@@ -148,7 +177,7 @@ main {
     }
   }
 
-  &#contact {
+  &.contact {
     overflow: hidden;
 
     h1 {

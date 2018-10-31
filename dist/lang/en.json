@@ -1,0 +1,36 @@
+{
+  "home": "home",
+  "about": "about me",
+  "work": "my work",
+  "contact": "contact me",
+
+  "firstname": "John ",
+  "lastname": "Mauduit",
+  "position": "Web Developper",
+
+  "title-about-1": "About ",
+  "title-about-2": "me",
+  "name": "John Mauduit",
+  "bio": "lorem10",
+  "job-1": "moi",
+  "date-1": "moi",
+  "position-1": "moi",
+  "text-1": "moi",
+  "job-2": "moi",
+  "date-2": "moi",
+  "position-2": "moi",
+  "text-2": "moi",
+  "job-3": "moi",
+  "date-3": "moi",
+  "position-3": "moi",
+  "text-3": "moi",
+
+  "title-work-1": "Coming ",
+  "title-work-2": "soon",
+  "title-work-3": "Take a look on my GitHub for now",
+
+  "title-contact-1": "Contact ",
+  "title-contact-2": "me",
+  "title-contact-3": "This is how you can reach me",
+  "resume": "Download my resume"
+}
