@@ -283,7 +283,7 @@ main {
       .footer .icons a:hover {
         color: #fb763c; }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
@@ -335,7 +335,7 @@ main {
     margin-top: 10vh;
     font-size: 4rem; } }
 
-@media screen and (min-width: 321px) and (max-width: 568px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   main.home h1 {
     font-size: 4rem;
     margin-top: 10vh; }
@@ -384,7 +384,7 @@ main {
     margin-top: 0.9rem;
     font-size: 1rem; } }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   main.home h1 {
     font-size: 3rem;
     margin-top: 10vh; }
