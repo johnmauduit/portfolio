@@ -113,6 +113,9 @@ main {
   }
 
   &.about {
+    h1 {
+      margin-top: 10vh;
+    }
     .portrait {
       width: 250px;
       height: 250px;
@@ -181,7 +184,7 @@ main {
     overflow: hidden;
 
     h1 {
-      margin-top: 20vh;
+      margin-top: 10vh;
     }
 
     .boxes {
