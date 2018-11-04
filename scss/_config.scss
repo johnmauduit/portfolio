@@ -63,17 +63,17 @@ $photos: home about work contact;
 // Media query Mixins
 
 @mixin mediaXsmall {
-  @media screen and (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
     @content;
   }
 }
 @mixin mediaSmall {
-  @media screen and (min-width: 321px) and (max-width: 568px) {
+  @media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     @content;
   }
 }
 @mixin mediaMedium {
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     @content;
   }
 }
