@@ -286,7 +286,8 @@ main {
 @media only screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 3rem; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -333,7 +334,9 @@ main {
     text-align: justify; }
   main.contact .title h1 {
     margin-top: 10vh;
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  main.contact .boxes {
+    padding-left: 1.1rem; } }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   main.home h1 {
