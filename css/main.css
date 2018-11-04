@@ -1,0 +1,432 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      background: #444;
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      background: #444;
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(250, 100, 35, 0.9);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: rgba(68, 68, 68, 0.9);
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .logo {
+      margin-top: 6vh;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      background: url(../img/Asset_6.svg) no-repeat;
+      background-size: 100%; }
+  .menu .nav-item {
+    transform: translate3d(500px, -100px, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #444; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    color: #fff;
+    text-decoration: none; }
+    .menu .nav-link:hover {
+      color: #444; }
+  .menu .nav-item:nth-child(1) {
+    transition-delay: 0.05s; }
+  .menu .nav-item:nth-child(2) {
+    transition-delay: 0.1s; }
+  .menu .nav-item:nth-child(3) {
+    transition-delay: 0.15s; }
+  .menu .nav-item:nth-child(4) {
+    transition-delay: 0.2s; }
+
+* {
+  box-sizing: border-box; }
+
+.flags {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: 30px; }
+  .flags .lang {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 0; }
+    .flags .lang.fr {
+      background: url(../img/france.svg) no-repeat;
+      padding: 0 1.5rem; }
+    .flags .lang.en {
+      background: url(../img/united-kingdom.svg) no-repeat;
+      padding: 0 1.5rem; }
+    .flags .lang:hover {
+      width: 32px;
+      height: 32px;
+      opacity: 0.9; }
+
+body {
+  background: #444;
+  color: #fff;
+  height: 100%;
+  margin: O;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img-home {
+    background: url(../img/home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
+  body#bg-img-about {
+    background: url(../img/about.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
+  body#bg-img-work {
+    background: url(../img/work.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
+  body#bg-img-contact {
+    background: url(../img/contact.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; }
+  body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.6);
+    z-index: -1; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  text-shadow: 2px 2px 3px #333; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem; }
+
+h4,
+h5 {
+  margin: 0;
+  padding-top: 0.4rem;
+  font-weight: 200;
+  text-shadow: 2px 2px 3px #333; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%; }
+
+.text-secondary {
+  color: #fb763c; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 80px); }
+  main .icons {
+    margin-top: 1rem;
+    text-shadow: #fff; }
+    main .icons a {
+      color: #fff;
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #fb763c; }
+  main.home {
+    overflow: hidden; }
+    main.home h1 {
+      margin-top: 20vh; }
+  main.about .portrait {
+    width: 250px;
+    height: 250px;
+    background: url(../img/Portrait.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 3px #fb763c; }
+  main .about-info {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "title title title" "bio-image bio bio" "job1 job2 job3" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr); }
+  main .title {
+    grid-area: title; }
+  main .portrait {
+    grid-area: bio-image;
+    margin: auto; }
+  main .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    text-align: justify; }
+    main .bio h3 {
+      font-size: 3rem; }
+  main .job-1 {
+    grid-area: job1; }
+  main .job-2 {
+    grid-area: job2; }
+  main .job-3 {
+    grid-area: job3; }
+  main .job-1,
+  main .job-2,
+  main .job-3 {
+    padding: 0.5rem;
+    background: rgba(51, 51, 51, 0.7);
+    border: solid 1px #fb763c;
+    border-radius: 10px;
+    text-align: center; }
+  main.work {
+    overflow: hidden; }
+    main.work h1 {
+      margin-top: 20vh; }
+  main.contact {
+    overflow: hidden; }
+    main.contact h1 {
+      margin-top: 20vh; }
+    main.contact .boxes .boxe {
+      display: flex;
+      padding-bottom: 1.5rem; }
+    main.contact .boxes .icons {
+      width: 70px; }
+      main.contact .boxes .icons.mail {
+        font-size: 2.8rem;
+        margin-top: 0.5rem; }
+      main.contact .boxes .icons.phone {
+        font-size: 3rem;
+        margin-top: 0.2rem; }
+      main.contact .boxes .icons.linkedin {
+        font-size: 3rem;
+        margin-top: 0.2rem; }
+      main.contact .boxes .icons.file {
+        font-size: 3.4rem;
+        margin-top: 0; }
+    main.contact .boxes .contact-text {
+      display: flex;
+      margin-top: 1.6rem;
+      font-size: 1.3rem; }
+
+.footer {
+  grid-area: footer;
+  height: 80px;
+  padding-top: 0.3rem;
+  text-align: center; }
+  .footer p {
+    font-size: 0.8rem; }
+  .footer .icons {
+    text-shadow: #fff; }
+    .footer .icons a {
+      color: #fff;
+      padding: 0 0.5rem; }
+      .footer .icons a:hover {
+        color: #fb763c; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 1.5rem;
+    text-align: center; }
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 1.5rem; }
+    .menu-branding .logo {
+      width: 150px;
+      height: 150px; }
+  .menu-btn.close .btn-line:nth-child(1) {
+    background: #fb763c; }
+  .menu-btn.close .btn-line:nth-child(3) {
+    background: #fb763c; }
+  main .about-info {
+    grid-template-areas: "title" "bio-image" "bio" "job1" "job2" "job3" "footer";
+    grid-template-columns: 1fr; }
+  main.about .title h1 {
+    font-size: 4rem; }
+  main.about .portrait {
+    width: 200px;
+    height: 200px; }
+  main.about .bio h3 {
+    font-size: 3rem;
+    text-align: center; }
+  main.about .bio p {
+    font-size: 1.6rem;
+    text-align: justify; }
+  main.about .job p {
+    font-size: 1rem;
+    text-align: justify; }
+  main.contact .title h1 {
+    margin-top: 10vh;
+    font-size: 4rem; } }
+
+@media screen and (min-width: 321px) and (max-width: 568px) {
+  main.home h1 {
+    font-size: 4rem;
+    margin-top: 10vh; }
+  main.about .title h1 {
+    font-size: 3rem; }
+  main.about .portrait {
+    width: 150px;
+    height: 150px; }
+  main.about .bio h3 {
+    font-size: 2rem;
+    text-align: center; }
+  main.about .bio p {
+    font-size: 1rem;
+    text-align: justify; }
+  main.about .job p {
+    font-size: 0.8rem;
+    text-align: justify; }
+  main.contact .title {
+    text-align: center;
+    padding-bottom: 2rem; }
+    main.contact .title h1 {
+      margin-top: 6vh;
+      font-size: 2.2rem;
+      padding-bottom: 1.5rem; }
+  main.contact .boxes .boxe {
+    display: flex;
+    padding-bottom: 0.5rem; }
+  main.contact .boxes .icons {
+    width: 45px;
+    text-align: left; }
+    main.contact .boxes .icons.mail {
+      font-size: 1.5rem;
+      margin-top: 0.5rem; }
+    main.contact .boxes .icons.phone {
+      font-size: 1.7rem;
+      margin-top: 0.2rem; }
+    main.contact .boxes .icons.linkedin {
+      font-size: 1.7rem;
+      margin-top: 0.2rem; }
+    main.contact .boxes .icons.file {
+      font-size: 2.1rem;
+      margin-top: 0; }
+  main.contact .boxes .contact-text {
+    display: flex;
+    text-align: right;
+    margin-top: 0.9rem;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  main.home h1 {
+    font-size: 3rem;
+    margin-top: 10vh; }
+  main.about .title h1 {
+    font-size: 2rem; }
+  main.about .portrait {
+    width: 150px;
+    height: 150px; }
+  main.about .bio h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  main.about .bio p {
+    font-size: 1rem;
+    text-align: justify; }
+  main.about .job p {
+    font-size: 0.8rem;
+    text-align: justify; }
+  main.contact .title {
+    text-align: center;
+    padding-bottom: 1.5rem; }
+    main.contact .title h1 {
+      margin-top: 4vh;
+      font-size: 1.8rem;
+      padding-bottom: 1.1rem; }
+  main.contact .boxes .boxe {
+    display: flex;
+    padding-bottom: 0.1rem; }
+  main.contact .boxes .icons {
+    width: 40px;
+    text-align: left; }
+    main.contact .boxes .icons.mail {
+      font-size: 1.5rem;
+      margin-top: 0.4rem; }
+    main.contact .boxes .icons.phone {
+      font-size: 1.7rem;
+      margin-top: 0.2rem; }
+    main.contact .boxes .icons.linkedin {
+      font-size: 1.7rem;
+      margin-top: 0.2rem; }
+    main.contact .boxes .icons.file {
+      font-size: 2.1rem;
+      margin-top: 0; }
+  main.contact .boxes .contact-text {
+    display: flex;
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 0.7rem; } }

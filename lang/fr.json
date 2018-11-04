@@ -1,0 +1,36 @@
+{
+  "home": "accueil",
+  "about": "à propos de moi",
+  "work": "mon travail",
+  "contact": "me contacter",
+
+  "firstname": "John ",
+  "lastname": "Mauduit",
+  "position": "Développeur Web",
+
+  "title-about-1": "A propos de ",
+  "title-about-2": "moi",
+  "name": "John Mauduit",
+  "bio": "Après 12 années comme ingénieur du son, j'ai décidé de faire évoluer ma carrière et de me former pour devenir dévelpppeur web. En vue de cet objectif, j'ai intégré au mois de Juin 2018 la Coding-Academy by Epitech. Désireux de continuer à évoluer en compétence, je suis à la recherche d'un CDI.",
+  "job-1": "Formation développeur web",
+  "date-1": "Juin-Octobre 2018",
+  "position-1": "",
+  "text-1": "Apprentissage de nombreux langages informatique. Pour de plus amples informations je vous invite à télécharger mon cv, sur la page de contact.",
+  "job-2": "Job 2",
+  "date-2": "Date 2",
+  "position-2": "Position 2",
+  "text-2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+  "job-3": "Job 3",
+  "date-3": "Date 3",
+  "position-3": "Position 3",
+  "text-3": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+
+  "title-work-1": "A",
+  "title-work-2": "venir",
+  "title-work-3": "Pour le moment, faites un petit tour sur mon Github",
+
+  "title-contact-1": "Me",
+  "title-contact-2": "contacter",
+  "title-contact-3": "Voici comment vous pouvez me joindre",
+  "resume": "Téléchargez mon CV"
+}

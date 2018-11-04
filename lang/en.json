@@ -1,0 +1,36 @@
+{
+  "home": "home",
+  "about": "about me",
+  "work": "my work",
+  "contact": "contact me",
+
+  "firstname": "John ",
+  "lastname": "Mauduit",
+  "position": "Web Developper",
+
+  "title-about-1": "About ",
+  "title-about-2": "me",
+  "name": "John Mauduit",
+  "bio": "After 12 years as a sound engineer, I decided to change my career and train myself to become a web developer. In view of this objective, I joined in June 2018 the Coding-Academy by Epitech. Eager to continue to evolve in competence, I am looking for a permanent contract.",
+  "job-1": "Web developper training",
+  "date-1": "June-October 2018",
+  "position-1": "",
+  "text-1": "Learning many computer languages. For more information I invite you to download my resume, on the contact page.",
+  "job-2": "Job 2",
+  "date-2": "Date 2",
+  "position-2": "Position 2",
+  "text-2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+  "job-3": "Job 3",
+  "date-3": "Date 3",
+  "position-3": "Position 3",
+  "text-3": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+
+  "title-work-1": "Coming ",
+  "title-work-2": "soon",
+  "title-work-3": "Take a look on my GitHub for now",
+
+  "title-contact-1": "Contact ",
+  "title-contact-2": "me",
+  "title-contact-3": "This is how you can reach me",
+  "resume": "Download my resume"
+}
