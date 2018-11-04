@@ -4,8 +4,8 @@
  * Jquery language functions
  * Listen on click, on the flag button in index.thml
  * Read entry from json file
- * Set items to local storage
- * Get items fron local storage
+ * Set items to session storage
+ * Get items fron session storage
  */
 
 //start point
