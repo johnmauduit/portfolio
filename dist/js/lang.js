@@ -14,6 +14,7 @@ $(document).ready(function() {
   let ls = false;
   jsonData.href = window.location.href;
 
+  // Get the object from session storage
   function getLs() {
     if (window.sessionStorage["local"]) {
       ls = JSON.parse(window.sessionStorage.getItem("local"));
