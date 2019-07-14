@@ -3,15 +3,17 @@
   "about": "about me",
   "work": "my work",
   "contact": "contact me",
-
   "firstname": "John ",
   "lastname": "Mauduit",
   "position": "Web Developper",
-
   "title-about-1": "About ",
   "title-about-2": "me",
   "name": "John Mauduit",
-  "bio": "After 12 years as a sound engineer, I decided to change my career and train myself to become a web developer. In order to achieve this objective, in June 2018 I joined the Coding-Academy by Epitech. Eager to continue to develop my skills, I am looking for a permanent contract.",
+  "bio": [
+    "After 12 years as a sound engineer, I decided to change my career and train myself to become a web developer.",
+    "In order to achieve this objective, in June 2018 I joined the Coding-Academy by Epitech.",
+    "Eager to continue to develop my skills, I am looking for a permanent contract."
+  ],
   "job-1": "Coding Academy by Epitech \"Paris\"",
   "date-1": "June-October 2018",
   "position-1": "Web developper training",
@@ -24,11 +26,9 @@
   "date-3": "2006-2010",
   "position-3": "Sound Engineer Assistant",
   "text-3": "In charge of setting up the studios and optimizing the working method. In charge of mixing programmes and bringing them up to standard for all television channels (France Télévision, Arté...) (Pièces à conviction, Chic...).",
-
   "title-work-1": "Coming ",
   "title-work-2": "soon",
   "title-work-3": "Take a look on my GitHub for now",
-
   "title-contact-1": "Contact ",
   "title-contact-2": "me",
   "title-contact-3": "This is how you can reach me",
