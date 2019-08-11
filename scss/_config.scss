@@ -63,7 +63,7 @@ $photos: home about work contact;
 // Media query Mixins
 
 @mixin mediaXsmall {
-  @media only screen and (max-width: 320px) {
+  @media only screen and (min-width: 320px) and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
     @content;
   }
 }
