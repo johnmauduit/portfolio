@@ -81,6 +81,13 @@
     text-decoration: none; }
     .menu .nav-link:hover {
       color: #444; }
+  .menu .menu-flags {
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0;
+    top: -25px; }
+  .menu .fr {
+    margin-right: 1rem; }
   .menu .nav-item:nth-child(1) {
     transition-delay: 0.05s; }
   .menu .nav-item:nth-child(2) {
@@ -326,7 +333,7 @@ main {
   .menu-btn.close .btn-line:nth-child(3) {
     background: #fb763c; }
   main .about-info {
-    grid-template-areas: "title" "bio-image" "bio" "job1" "job2" "job3" "footer";
+    grid-template-areas: "title" "bio-image" "bio" "joba" "job1" "job2" "job3" "footer";
     grid-template-columns: 1fr; }
   main.about .title h1 {
     font-size: 4rem; }
@@ -366,6 +373,9 @@ main {
   main.about .job p {
     font-size: 0.8rem;
     text-align: justify; }
+  main.about #text-a {
+    font-size: 0.8rem;
+    text-align: center; }
   main.contact .title {
     text-align: center;
     padding-bottom: 2rem; }
@@ -415,6 +425,9 @@ main {
   main.about .job p {
     font-size: 0.8rem;
     text-align: justify; }
+  main.about #text-a {
+    font-size: 0.8rem;
+    text-align: center; }
   main.contact .title {
     text-align: center;
     padding-bottom: 1.5rem; }
