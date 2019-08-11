@@ -213,7 +213,7 @@ main {
   main .about-info {
     display: grid;
     grid-gap: 2rem;
-    grid-template-areas: "title title title" "bio-image bio bio" "job1 job2 job3" "footer footer footer";
+    grid-template-areas: "title title title" "bio-image bio bio" "jobr joba jobl" "job1 job2 job3" "footer footer footer";
     grid-template-columns: repeat(3, 1fr); }
   main .title {
     grid-area: title; }
@@ -226,12 +226,15 @@ main {
     text-align: justify; }
     main .bio h3 {
       font-size: 3rem; }
+  main .job-a {
+    grid-area: joba; }
   main .job-1 {
     grid-area: job1; }
   main .job-2 {
     grid-area: job2; }
   main .job-3 {
     grid-area: job3; }
+  main .job-a,
   main .job-1,
   main .job-2,
   main .job-3 {
