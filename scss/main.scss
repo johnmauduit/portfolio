@@ -133,6 +133,7 @@ main {
     grid-template-areas:
       "title title title"
       "bio-image bio bio"
+      "jobr joba jobl"
       "job1 job2 job3"
       "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
@@ -154,6 +155,9 @@ main {
       font-size: 3rem;
     }
   }
+  .job-a {
+    grid-area: joba;
+  }
   .job-1 {
     grid-area: job1;
   }
@@ -163,6 +167,7 @@ main {
   .job-3 {
     grid-area: job3;
   }
+  .job-a,
   .job-1,
   .job-2,
   .job-3 {
