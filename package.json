@@ -11,8 +11,8 @@
   "author": "John Mauduit",
   "license": "UNLICENSED",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "lodash": "^4.17.14",
+    "gh-pages": "^2.1.1",
+    "lodash": "^4.17.15",
     "lodash.update": "^4.10.2",
     "node-sass": "^4.12.0"
   }
