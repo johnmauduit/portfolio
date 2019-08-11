@@ -104,6 +104,7 @@ main {
       }
     }
   }
+  
   &.home {
     overflow: hidden;
 
@@ -214,8 +215,18 @@ main {
 
       .contact-text {
         display: flex;
-        margin-top: 1.6rem;
+        margin-top: 0.7rem;
         font-size: 1.3rem;
+        
+      }
+      .contact-text a {
+        color: setTextColor($primary-color);
+        padding: 0.4rem;
+  
+        &:hover {
+          color: $secondary-color;
+          //@include easeOut();
+        }
       }
     }
   }

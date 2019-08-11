@@ -267,8 +267,13 @@ main {
         margin-top: 0; }
     main.contact .boxes .contact-text {
       display: flex;
-      margin-top: 1.6rem;
+      margin-top: 0.7rem;
       font-size: 1.3rem; }
+    main.contact .boxes .contact-text a {
+      color: #fff;
+      padding: 0.4rem; }
+      main.contact .boxes .contact-text a:hover {
+        color: #fb763c; }
 
 .footer {
   grid-area: footer;
@@ -386,10 +391,10 @@ main {
   main.contact .boxes .contact-text {
     display: flex;
     text-align: right;
-    margin-top: 0.9rem;
+    margin-top: 0.21rem;
     font-size: 1rem; } }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
   main.home h1 {
     font-size: 3rem;
     margin-top: 10vh; }
@@ -435,5 +440,5 @@ main {
   main.contact .boxes .contact-text {
     display: flex;
     text-align: right;
-    margin-top: 1rem;
+    margin-top: 0.31rem;
     font-size: 0.7rem; } }
