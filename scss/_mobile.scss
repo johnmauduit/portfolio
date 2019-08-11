@@ -66,6 +66,7 @@
         "title"
         "bio-image"
         "bio"
+        "joba"
         "job1"
         "job2"
         "job3"
@@ -92,6 +93,7 @@
         font-size: 1rem;
         text-align: justify;
       }
+      
     }
 
     &.contact {
@@ -133,6 +135,10 @@
       .job p {
         font-size: 0.8rem;
         text-align: justify;
+      }
+      #text-a{
+        font-size: 0.8rem;
+        text-align: center;
       }
     }
     &.contact {
@@ -209,6 +215,10 @@
       .job p {
         font-size: 0.8rem;
         text-align: justify;
+      }
+      #text-a{
+        font-size: 0.8rem;
+        text-align: center;
       }
     }
     &.contact {
